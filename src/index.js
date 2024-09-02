@@ -60,3 +60,34 @@ car1.carColor;
 // car1.carBrand
 // car1.carLocation
 // car1.carPlaque
+//functions
+var func = function (numbers, location) {
+    console.log("".concat(numbers));
+    if (location) {
+        console.log("".concat(location));
+    }
+};
+func(10, 'kigali');
+func(2);
+//return types
+var retunExample = function (something) {
+    switch (Math.floor(Math.random() * 5)) {
+        case 0:
+            return 'ange';
+        case 1:
+            return 'susa';
+        case 2:
+            return 'knot';
+        default:
+            return 'something';
+    }
+};
+console.log(retunExample('trying'));
+//fibonacci
+var fiboExample = function (i) {
+    if (i <= 1) {
+        return i;
+    }
+    return (fiboExample(i - 1) + fiboExample(i - 2));
+};
+console.log(fiboExample(4));

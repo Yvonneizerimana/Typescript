@@ -54,3 +54,46 @@ car1.carColor
 // car1.carBrand
 // car1.carLocation
 // car1.carPlaque
+
+//functions
+const func=(numbers:number, location?:string) =>{
+    console.log(`${numbers}`)
+    if(location){
+        console.log(`${location}`)
+    }
+
+}
+
+func(10,'kigali')
+func(2)
+
+//return types
+
+const retunExample=(something:string)=>{
+    switch(Math.floor(Math.random()*5)){
+        case 0:
+            return 'ange'
+            case 1:
+                return 'susa'
+                case 2:
+                    return 'knot'
+                    default:
+                    return 'something'
+    }
+
+   
+}
+console.log(retunExample('trying'))
+
+//fibonacci
+
+const fiboExample=(i:number):number=>{
+    if(i<=1){
+        return i
+    }
+ return fiboExample(i-1)+fiboExample(i-2);
+}
+console.log(fiboExample(4))
+
+
+
