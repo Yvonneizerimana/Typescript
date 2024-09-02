@@ -88,6 +88,25 @@ var fiboExample = function (i) {
     if (i <= 1) {
         return i;
     }
-    return (fiboExample(i - 1) + fiboExample(i - 2));
+    return fiboExample(i - 1) + fiboExample(i - 2);
 };
 console.log(fiboExample(4));
+//type any
+var a = 'yvonne';
+a = 12;
+a = 67;
+console.log(a);
+//readonly on array
+var array = ["yvonne", "ange"];
+array.push('kabaka');
+var head = array[2];
+console.log(head);
+//tuple array
+var myExample = [10, true, "yvonne"];
+console.log(myExample);
+//optional properties
+var carry = {
+    type: 'sport',
+    name: 'bmw'
+};
+console.log(carry);

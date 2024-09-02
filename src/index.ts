@@ -96,4 +96,30 @@ const fiboExample=(i:number):number=>{
 console.log(fiboExample(4))
 
 
+//type any
 
+let a:any='yvonne'
+a=12
+a=67
+console.log(a)
+
+//readonly on array
+
+let array:string[]=["yvonne","ange"]
+array.push('kabaka')
+
+let head:string=array[2]
+console.log(head)
+
+//tuple array
+
+let myExample:[number,boolean,string]=[10,true,"yvonne"]
+console.log(myExample)
+
+//optional properties
+
+let carry:{type:string,name:string,age?:number}={
+    type:'sport',
+    name:'bmw'
+}
+console.log(carry)
