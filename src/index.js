@@ -128,3 +128,8 @@ var allDetailsOfCar = {
     name: nameOfCar
 };
 console.log(allDetailsOfCar);
+var rectangle = {
+    height: 10,
+    width: 5
+};
+console.log(rectangle);

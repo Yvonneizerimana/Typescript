@@ -159,3 +159,16 @@ const allDetailsOfCar:cari={
 
 console.log(allDetailsOfCar)
 
+//interfaces
+
+interface Rectangle{
+    height:number,
+    width:number
+
+}
+const rectangle:Rectangle={
+    height:10,
+    width:5
+}
+
+console.log(rectangle)
