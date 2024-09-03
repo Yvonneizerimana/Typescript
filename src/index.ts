@@ -186,3 +186,10 @@ const Colored:coloredRectangle={
 }
 
 console.log(Colored)
+
+//union type
+function age(yourage:number|string){
+    console.log(`your age: ${yourage}`)
+}
+age(42)
+age('my age is 42')

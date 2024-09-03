@@ -139,3 +139,9 @@ var Colored = {
     color: 'blue'
 };
 console.log(Colored);
+//union type
+function age(yourage) {
+    console.log("your age: ".concat(yourage));
+}
+age(42);
+age('my age is 42');
