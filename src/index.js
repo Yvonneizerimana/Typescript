@@ -145,3 +145,43 @@ function age(yourage) {
 }
 age(42);
 age('my age is 42');
+//functions
+var address = function (streetNumber, location) {
+    console.log("".concat(streetNumber));
+    if (location) {
+        console.log("".concat(location));
+    }
+};
+address(10, 'kigali');
+var addition = function (a, b, c) {
+    return c + (a + b);
+};
+console.log(addition(2, 3, 'the sum of two numbers is '));
+//rest parameters
+var add = function (a, b) {
+    var rest = [];
+    for (var _i = 2; _i < arguments.length; _i++) {
+        rest[_i - 2] = arguments[_i];
+    }
+    return a + b + rest.reduce(function (p, c) { return p + c; }, 0);
+};
+console.log(add(2, 3, 4, 5, 6));
+//casting with as
+var numbering = "heyyvonne";
+console.log(numbering.length);
+//casting with <>
+var num = "hey";
+console.log(num.length);
+//classes
+var School = /** @class */ (function () {
+    function School(name, location) {
+        this.schoolName = name;
+        this.schoolLocation = location;
+    }
+    School.prototype.getSchoolDetails = function () {
+        return "the schoolName is ".concat(this.schoolName, ", Location is ").concat(this.schoolLocation);
+    };
+    return School;
+}());
+var obj1 = new School("APEKI TUMBS TVET SCHOOL", "Rulindo District");
+console.log(obj1.getSchoolDetails());

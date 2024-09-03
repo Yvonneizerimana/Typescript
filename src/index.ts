@@ -193,3 +193,57 @@ function age(yourage:number|string){
 }
 age(42)
 age('my age is 42')
+
+
+//functions
+
+const address=(streetNumber:number, location?:string) =>{
+    console.log(`${streetNumber}`)
+    if(location){
+        console.log(`${location}`)
+    } 
+}
+address(10,'kigali')
+
+const addition=(a:number,b:number,c:string)=>{
+  return c+ (a + b)
+}
+console.log(addition(2,3,'the sum of two numbers is '))
+
+//rest parameters
+
+const add=(a:number,b:number,...rest:number[])=>{
+    return a+b+rest.reduce((p,c)=>p+c, 0);
+}
+console.log(add(2,3,4,5,6));
+
+//casting with as
+const numbering:unknown="heyyvonne"
+console.log((numbering as string).length)
+
+//casting with <>
+const num:unknown="hey"
+console.log((<string>num).length)
+
+//classes
+
+class School{
+   public schoolName:string
+   public schoolLocation:string
+
+   public constructor(name:string, location:string){
+    this.schoolName=name
+    this.schoolLocation=location
+   }
+
+   public getSchoolDetails(){
+    return `the schoolName is ${this.schoolName}, Location is ${this.schoolLocation}`
+  
+   }
+
+}
+
+const obj1=new School("APEKI TUMBS TVET SCHOOL","Rulindo District")
+
+console.log(obj1.getSchoolDetails())
+
