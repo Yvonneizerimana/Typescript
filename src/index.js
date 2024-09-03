@@ -133,3 +133,9 @@ var rectangle = {
     width: 5
 };
 console.log(rectangle);
+var Colored = {
+    height: 10,
+    width: 5,
+    color: 'blue'
+};
+console.log(Colored);

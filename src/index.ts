@@ -172,3 +172,17 @@ const rectangle:Rectangle={
 }
 
 console.log(rectangle)
+
+//extending interfaces
+
+interface coloredRectangle extends Rectangle{
+    color:string
+}
+
+const Colored:coloredRectangle={
+    height:10,
+    width:5,
+    color:'blue'
+}
+
+console.log(Colored)
