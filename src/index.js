@@ -185,3 +185,33 @@ var School = /** @class */ (function () {
 }());
 var obj1 = new School("APEKI TUMBS TVET SCHOOL", "Rulindo District");
 console.log(obj1.getSchoolDetails());
+//generic basis
+function createPair(v1, v2) {
+    return [v1, v2];
+}
+console.log(createPair(5, 5));
+console.log(createPair("Yvonne IZERIMANA", 23));
+var changePoint = {};
+changePoint.x = 10;
+console.log(changePoint);
+var requiredy = {
+    name: "MACIBIRI",
+    age: 20,
+    location: "huye"
+};
+console.log(requiredy);
+//record utility type
+var mine = {
+    "mummy": 30,
+    "shami": 60
+};
+console.log(mine);
+var omitExample = {
+    age: 20
+};
+console.log(omitExample);
+//pick utility type
+var pickExample = {
+    name: "MACIBIRI"
+};
+console.log(pickExample);
