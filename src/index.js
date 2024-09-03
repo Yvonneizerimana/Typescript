@@ -110,3 +110,21 @@ var carry = {
     name: 'bmw'
 };
 console.log(carry);
+//enum
+var cardinalDirections;
+(function (cardinalDirections) {
+    cardinalDirections[cardinalDirections["North"] = 1] = "North";
+    cardinalDirections[cardinalDirections["South"] = 2] = "South";
+    cardinalDirections[cardinalDirections["East"] = 3] = "East";
+    cardinalDirections[cardinalDirections["West"] = 4] = "West";
+})(cardinalDirections || (cardinalDirections = {}));
+console.log(cardinalDirections.West);
+var nameOfCar = "BMW";
+var typeOfCar = "bwiza";
+var plaqueOfCar = 89642;
+var allDetailsOfCar = {
+    plaque: plaqueOfCar,
+    type: typeOfCar,
+    name: nameOfCar
+};
+console.log(allDetailsOfCar);

@@ -123,3 +123,39 @@ let carry:{type:string,name:string,age?:number}={
     name:'bmw'
 }
 console.log(carry)
+
+//enum
+
+enum cardinalDirections{
+   North=1,
+   South=2,
+   East,
+   West
+
+}
+
+console.log(cardinalDirections.West)
+
+//type aliases
+
+type carName=string
+type carType=string
+type carPlaque=number
+type cari={
+    plaque:carPlaque,
+    type:carType,
+    name:carName
+}
+
+
+const nameOfCar:carName="BMW"
+const typeOfCar:carType="bwiza"
+const plaqueOfCar:carPlaque=89642
+const allDetailsOfCar:cari={
+      plaque:plaqueOfCar,
+    type:typeOfCar,
+    name:nameOfCar
+}
+
+console.log(allDetailsOfCar)
+
